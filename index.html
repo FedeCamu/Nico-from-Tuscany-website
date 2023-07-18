@@ -10,21 +10,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <meta name="keywords" content="Nico, Nico's, Nico's World, Nico's World YouTube, Nico's World YouTube Channel, Nico's World YouTube Chann -->
     <link rel="stylesheet" href="./src/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Nico from Tuscany</title>
   </head>
   <body>
     <div class="Container">
-      <nav>
-        <img src="images/logo.png" alt="Nico from Tuscany" class="logo" />
+      <div class="topnav" id="myTopnav">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="tech.html">Tech</a></li>
-          <li><a href="food.html">Food</a></li>
-          <li><a href="travel.html">Travel</a></li>
-          <li><a href="about.html">About Nico</a></li>
-          <li><a href="contact.html">Contact Nico</a></li>
-        </ul>
-      </nav>
+ <li> <a href="#home" class="active">Home</a></li>
+  <li><a href="#Food">Food</a></li>
+  <li><a href="#Tech">Tech</a></li>
+  <li><a href="#Travel">Travel</a></li>
+  <li><a href="#About">About</a></li>
+  <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a></li>
+  </ul>
+</div>
+      
       <header>
         <video autoplay muted loop plays-inline class="background-video">
           <source src="images/intro_NFT_Site.mp4" type="video/mp4" />
@@ -63,5 +66,16 @@
       </header>
       <main></main>
     </div>
+    <script>
+      /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+    </script>
   </body>
 </html>
