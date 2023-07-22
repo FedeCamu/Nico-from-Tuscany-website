@@ -14,17 +14,16 @@ header {
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
-  position:absolute;
-  padding:0 5%;
+  position: absolute;
+  /* padding: 0 5%; */
   display: block;
   align-items: center;
   justify-content: center;
   text-align: center;
- 
+
   color: white;
-   /* padding: 200px 0; */
+  /* padding: 200px 0; */
   /* margin: 40px 0; */
-  
 }
 
 /* Add a black background color to the top navigation */
@@ -33,23 +32,20 @@ header {
   background-color: black;
   overflow: hidden;
   position: fixed;
-   z-index: 1;
+  z-index: 1;
 }
 
 /* Style the links inside the navigation bar */
 .topnav ul {
-   float: right; 
-
+  float: right;
 }
 
 .topnav li {
   display: inline-block;
   list-style: none;
-
 }
 
 .topnav a {
- 
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -65,7 +61,6 @@ header {
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
- 
   color: rgb(176, 134, 158);
 }
 
@@ -77,11 +72,11 @@ header {
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
   .topnav ul {
-   float: left;
- 
-
-}
-  .topnav li:not(:first-child) {display: none;}
+    float: left;
+  }
+  .topnav li:not(:first-child) {
+    display: none;
+  }
   .topnav a.icon {
     float: right;
     display: block;
@@ -90,7 +85,9 @@ header {
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
   .topnav.responsive a.icon {
     position: absolute;
     right: 0;
@@ -106,6 +103,9 @@ header {
 header h1 {
   color: white;
   font-size: 120px;
+  align-items: center;
+  padding: 16% 0 0 0;
+  margin-bottom: 0;
 }
 
 header h3 {
@@ -113,25 +113,44 @@ header h3 {
   font-size: 30px;
 }
 
-.background-video {
+@media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 60px;
+  }
+  header h3 {
+    font-size: 15px;
+  }
+}
+
+/* .background-video {
  position:absolute;
- top: 50px;
  right: 0;
  bottom: 0;
  z-index: -1;
+  min-width: 100%;
+  min-height: 100%;
+  
+ } */
+
+.background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  min-width: 100%;
+  min-height: 100%;
 }
 
-@media(min-aspect-ratio: 16/9) {
+@media (min-aspect-ratio: 16/9) {
   .background-video {
     width: 100%;
     height: auto;
   }
 }
 
-@media(max-aspect-ratio: 16/9) {
+@media (max-aspect-ratio: 16/9) {
   .background-video {
     width: auto;
     height: 100%;
   }
 }
-
