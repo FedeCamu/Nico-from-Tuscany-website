@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Nico is a content creator from Ontario, Canada. Follow Nico on social media to stay up to date with his latest content."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="keywords" content="Nico, Nico's, Nico's World, Nico's World YouTube, Nico's World YouTube Channel, Nico's World YouTube Chann -->
+    <link rel="stylesheet" href="./src/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script
+      src="https://kit.fontawesome.com/c564ad1565.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Nico from Tuscany</title>
+  </head>
+  <body>
+    <div class="Container">
+      <header>
+        <div class="topnav" id="myTopnav">
+          <ul>
+            <li><a href="./">Home</a></li>
+            <li><a href="./food.html">Food</a></li>
+            <li><a href="./tech.html">Tech</a></li>
+            <li><a href="./travel.html" class="active">Travel</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa-solid fa-bars"></i>
+          </a>
+        </div>
+      </header>
+    </div>
+    <script>
+      /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>
