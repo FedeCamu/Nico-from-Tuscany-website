@@ -35,6 +35,8 @@ body {
 /* Style the links inside the navigation bar */
 .topnav ul {
   float: right;
+  margin-right: 5%;
+  margin-top: 15px;
 }
 
 .topnav li {
@@ -45,9 +47,9 @@ body {
 .topnav a {
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 /* Change the color of links on hover */
@@ -127,7 +129,7 @@ body {
   color: white;
   font-size: 120px;
   align-items: center;
-  padding: 15% 0 0 0;
+  padding: 18% 0 0 0;
   margin-bottom: 0;
 }
 
